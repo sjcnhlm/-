@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:alpha="0.66"
+    >
+    <LinearLayout
+        android:id="@+id/luser_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="您的用户名"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/user_info"
+            android:layout_width="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fefefe"
+            android:background="@drawable/shapefile"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lrole_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/luser_info"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="您的身份是："
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/role_info"
+            android:layout_width="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fefefe"
+            android:background="@drawable/shapefile"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lphone_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/lrole_info"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="您的手机号是："
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/phone_info"
+            android:layout_width="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fefefe"
+            android:background="@drawable/shapefile"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

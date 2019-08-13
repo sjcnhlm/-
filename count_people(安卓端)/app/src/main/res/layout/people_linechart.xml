@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:alpha="0.66"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="自习室人数折线图"
+        android:textColor="#222222"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+
+    <com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/lineChart"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    />
+
+</LinearLayout>

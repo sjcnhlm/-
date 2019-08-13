@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lbg"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账号"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/login_user"
+            android:layout_width="250dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fefefe"
+            android:background="@drawable/shapefile"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearpasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/linearuser"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密码"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="250dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textColor="#fefefe"
+            android:background="@drawable/shapefile"
+            />
+    </LinearLayout>
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/login_bt"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearpasword"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="30dp"
+        android:text="登录"
+        android:textColor="@color/black"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@color/yellow"
+        app:sub_btn_ripple_color="@color/yellow"
+        app:sub_btn_tick_color="@color/white" />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/register_bt"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearpasword"
+        android:layout_marginLeft="200dp"
+
+        android:text="注册"
+        android:textColor="@color/black"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@color/yellow"
+        app:sub_btn_ripple_color="@color/yellow"
+        app:sub_btn_tick_color="@color/white" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="105dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:text="忘记密码"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>

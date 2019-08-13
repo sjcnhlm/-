@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_count"
+            style="@style/tab_menu_item"
+            android:text="人数统计" />
+
+        <RadioButton
+            android:id="@+id/rb_temp"
+            style="@style/tab_menu_item"
+            android:text="温度状况" />
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            style="@style/tab_menu_item"
+            android:text="灯光控制" />
+
+        <RadioButton
+            android:id="@+id/rb_linechart"
+            style="@style/tab_menu_item"
+            android:text="折线图" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/fg_navigation_view"
+        android:background="@drawable/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/drawer_layout_left_head">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

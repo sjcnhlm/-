@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">智能自习室管理系统</string>
+    <string name="card_content">这是一个来自诗酒趁年华独立开发的 智能自习室系统 App 中的关于页面。\n\智能自习室管理系统，是本人的毕业设计产品，很多方面都有待提高 。\n主要功能有：查询自习室中的人数并以折线图形式显示出来，查询当前自习室的温度，控制硬件设备灯的亮灭和风扇的开关。\n\n</string>
+    <string name="share_content">分享一款应用：「纯纯打码」，可能是最好用的打码软件，支持传统马赛克、毛玻璃，以及手指、选区打码，更有创意型高亮打码、LowPoly 风格，轻巧漂亮，打码也能够成为一种赏心悦目，推荐：http://t.cn/RbRjE4u</string>
+    <string name="pure_writer">Pure Writer</string>
+    <string name="pure_mosaic">Pure Mosaic</string>
+
+</resources>

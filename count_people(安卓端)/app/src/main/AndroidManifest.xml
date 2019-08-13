@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lm.count_people">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_my"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.WelcomeActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.GuideActivity"
+            android:theme="@style/FullScreen"/>
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.RegistActivity"/>
+        <activity android:name=".Activity.ForgetPasseordActivity"/>
+        <activity android:name=".Activity.MyInfoActivity"/>
+        <activity android:name=".Activity.WebViewActivity"/>
+        <activity android:name=".Activity.FgFunctionActivity" />
+        <activity android:name=".Activity.AboutActivity"
+            android:theme="@style/AppTheme.About"
+            />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.BaseCompatActivity" />
+        <activity android:name=".Activity.LoginActivity"
+            android:theme="@style/FullScreen"/>
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
