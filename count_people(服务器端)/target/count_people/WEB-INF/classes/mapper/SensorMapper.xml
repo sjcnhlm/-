@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nuc.dao.SensorDao" >
+<resultMap id="BaseResultMap" type="com.nuc.dto.Sensor" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="temp" property="temperature" jdbcType="VARCHAR" />
+    <result column="humi" property="humidity" jdbcType="VARCHAR" />
+    <result column="illu" property="illumination" jdbcType="INTEGER" />
+  </resultMap>
+
+  
+  <insert id="insertSensorInfo" parameterType="com.nuc.dto.Sensor" >
+	  insert into Sensor (temp,humi,illu)
+	  values (#{temperature},#{humidity},#{illumination})
+  </insert>
+  
+  <select id="getLatestSensor" resultMap="BaseResultMap">
+		select *11
+		from sensor order by id desc limit 10;
+	</select>
+
+
+    <select id="getLastSensorInfo" resultMap="BaseResultMap">
+		select *
+		from sensor order by id desc limit 1;
+	</select>
+  
+</mapper>
